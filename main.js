@@ -12,9 +12,9 @@ function beginTest() {
             You clicked 0 times in 0 seconds.<br>\
             Your stream speed is 0 bpm\
         ");
-        // localStorage.setItem('clickLimit', clickLimit);
-        // localStorage.setItem('key1', key1);
-        // localStorage.setItem('key2', key2);
+        localStorage.setItem('clickLimit', clickLimit);
+        localStorage.setItem('key1', key1);
+        localStorage.setItem('key2', key2);
 }
 $(document).keypress(function(event)
 {
@@ -52,6 +52,17 @@ $(document).keypress(function(event)
         }
     }
 })
-// $(document).ready(function() {
-//     if(!localStorage.getItem('bgcolor')) {
-// });
+$(document).ready(function() {
+    if(!localStorage.getItem('clickLimit'))
+        $("input#clickNum").val("20");
+    else
+        $("input#clickNum").val(localStorage.getItem('clickLimit'));
+    if(!localStorage.getItem('key1'))
+        $("input#key1").val("z");
+    else
+        $("input#key1").val(localStorage.getItem('key1'));
+    if(!localStorage.getItem('key2'))
+        $("input#key2").val("x");
+    else
+        $("input#key2").val(localStorage.getItem('key2'));
+});
