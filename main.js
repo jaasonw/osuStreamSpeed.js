@@ -1,8 +1,6 @@
 clickNum = [];
 testrunning = false;
 function beginTest() {
-    if (testrunning == false)
-    {
         testrunning = true;
         clickLimit = parseInt(document.getElementById('clickNum').value);
         clickNum.length = 0;
@@ -17,12 +15,11 @@ function beginTest() {
         // localStorage.setItem('clickLimit', clickLimit);
         // localStorage.setItem('key1', key1);
         // localStorage.setItem('key2', key2);
-    }
-    else
-        return;
 }
 $(document).keypress(function(event)
 {
+    if (event.keyCode == 13 && testrunning == false)
+        beginTest();
     if (testrunning == true)
     {
         if (String.fromCharCode(event.which) == key1 || String.fromCharCode(event.which) == key2)
@@ -54,11 +51,6 @@ $(document).keypress(function(event)
             }
         }
     }
-})
-$(document).keypress(function(e)
-{
-    if (e.keyCode == 13 && testrunning == false)
-        beginTest();
 })
 // $(document).ready(function() {
 //     if(!localStorage.getItem('bgcolor')) {
