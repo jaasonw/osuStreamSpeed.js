@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>you suck at streaming</title>
+        <meta name="description" content="arctismo">
+        <meta name="viewport" content="initial-scale=1"/>
+        <meta name="viewport" content="width=device-width">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h2>Osu! Stream Speed</h2>
+        <form>
+            Number of clicks
+            <input id = "clickNum" type="number" min="3"/><br>
+            Key 1
+            <input id = "key1" maxlength="1"/><br>
+            Key 2
+            <input id = "key2" maxlength="1"/><br>
+            <button onclick="beginTest()" type="button">Begin Test</button>
+        </form>
+        <h3>Your Results:</h3>
+        <p id = "Result"></p>
+
+        <!--GOOGLE ANALYTICS HERE-->
+        <script src="js/ga.js"></script>
+    </body>
+</html>
