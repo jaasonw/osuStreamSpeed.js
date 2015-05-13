@@ -60,10 +60,6 @@ $(document).keypress(function(event)
                         clickTimes.push(Date.now());
                         if (clickTimes.length > 1)
                             timediffs.push(clickTimes[clickTimes.length - 1] - clickTimes[clickTimes.length - 2]);
-                        else
-                            timediffs.push(Date.now() - beginTime);
-
-                        //clickTimes.push(Date.now() - clickTimes[clickTimes.length - 1]);
 
                         streamtime = (Date.now() - beginTime)/1000;
                         $("div#Result").html("\
