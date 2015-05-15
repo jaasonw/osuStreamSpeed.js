@@ -5,35 +5,34 @@
         <title>you suck at streaming</title>
         <meta name="description" content="arctismo's web based osu! stream speed benchmark">
         <meta name="viewport" content="initial-scale=1"/>
-        <meta name="viewport" content="width=device-width">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="main.js"></script>
-        <style type="text/css">
-            body {
-                background-color: white;
-            }
-        </style>
+        <meta name="viewport" content="width=device-width"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"/></script>
+        <script src="main.js"/></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h2>Osu! Stream Speed</h2>
-        <form id = "streamSettings">
-            Number of clicks
-            <input id = "clickNum" type="number" min="3"/><br>
-            Key 1
-            <input id = "key1" maxlength="1"/><br>
-            Key 2
-            <input id = "key2" maxlength="1"/><br>
-            <button id = "submit" onclick = "beginTest()" type="button">Begin Test</button><br>
-            <div id = "status">Time starts when you make your first click.</div>
-        </form>
-        <h3>Your Results:</h3>
-        <div id = "Result">
-            You clicked 0 times in 0 seconds.<br>
-            Your stream speed is 0 bpm.<br>
-            Your standard deviation is: 0.
+        <div id = "ui">
+            <h2>osu! Stream Speed Benchmark</h2>
+            <form id = "streamSettings">
+                Number of clicks<br>
+                <input id = "clickNum" type="number" min="3"/><br><br>
+                Key 1<br>
+                <input id = "key1" maxlength="1"/><br><br>
+                Key 2<br>
+                <input id = "key2" maxlength="1"/><br><br>
+                <button id = "submit" onclick = "beginTest()" type="button">Begin Test</button><br>
+                <div id = "status">Time starts when you make your first click.</div>
+            </form>
+            <h3>Your Results:</h3>
+            <div id = "Result">
+                Tap Speed: 0 taps / 0 seconds<br>
+                Stream Speed: 0 bpm<br>
+                Unstable Rate: 0.
+            </div>
         </div>
 
         <!--GOOGLE ANALYTICS HERE-->
-        <script src="js/ga.js"></script>
+        <script src="http://arctic5.github.io/js/ga.js"></script>
     </body>
 </html>
