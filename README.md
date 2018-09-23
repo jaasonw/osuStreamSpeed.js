@@ -1,10 +1,8 @@
 # osuStreamSpeed.js
 An osu! stream speed tester using javascript and jquery.
 
-You are a dirty cheater if you hold down the key
+I wrote this a long time ago to learn a bit of javascript and jquery but since then better forks, like the ones linked below, have been made so you should check those out instead 
 
-TODO:
+http://osuspeed.ml
 
-make pretty,
-
-mouse button support
+http://ckrisirkc.github.io/osuStreamSpeed.js/newindex.html
