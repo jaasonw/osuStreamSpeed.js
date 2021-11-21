@@ -1,35 +1,48 @@
-body
-{
-    background-color: #59CCF2;
-    font-family: 'Open Sans', sans-serif;
-
+body {
+  margin: 0;
+  background-color: #decfe0;
+  font-family: "Open Sans", sans-serif;
 }
-#ui
-{
-    text-align: center;
+#ui {
+  padding-top: 1em;
+  text-align: center;
+  background-color: white;
+  width: 30em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#submit
-{
-    background-color: #20BDF1;
-    font-family: 'Open Sans', sans-serif;
-    cursor: poiner;
-    border:none;
-    border-radius:2px;
-    font-size: 20px;
+#heading {
+  background-color: #e660ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  line-height: 13px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#submit {
+  background-color: #decfe0;
+  font-family: "Open Sans", sans-serif;
+  cursor: poiner;
+  border: none;
+  border-radius: 2px;
+  font-size: 20px;
 }
 #submit:hover {
-    border: none;
-    background: #01B4EF;
+  border: none;
+  background: #decfe0de;
 }
-#streamSettings
-{
-    font-size: 20px;
+#streamSettings {
+  font-size: 20px;
 }
-input
-{
-    text-align: center;
+input {
+  text-align: center;
 }
-footer
-{
-    text-align: right;
+footer {
+  text-align: right;
 }
